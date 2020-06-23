@@ -1,0 +1,274 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.services-bg-f{
+	width: 100%;
+	background: #EFEFEF;
+	/*height: 100vh;*/
+}
+
+.service-section{
+	max-width: 1200px;
+	padding: 50px;
+	background: #EFEFEF;
+	margin: 0 auto;
+}
+
+.service-section .title{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.service-section .title h2{
+	font-size: 25px;
+	color: #161929;
+	font-family: D-DIN;
+	line-height: 40px;
+}
+
+.service-section .title label{
+	display: inline-block;
+	width: 200px;
+	height: 2px;
+	background: #EBBE32;
+}
+
+.service-section .service-point{
+	width: 100%;
+	margin-top: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+}
+
+.service-section .service-point .min-service-point{
+	position: relative;
+	width: 300px;
+	height: 200px;
+	background: #fff;
+	padding-top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border-top: 3px solid #161929;
+	box-shadow: 0px 0px 15px rgb(180, 180, 180, 0.5);
+	transition: 0.3s;
+}
+
+.service-section .service-point .min-service-point:hover{
+	border-top: 3px solid #EBBE32;
+	box-shadow: 0px 0px 15px rgb(80, 80, 80, 0.4);
+}
+
+.service-section .service-point .min-service-point span{
+	position: absolute;
+	top: -30px;
+	left: 120px;
+	width: 60px;
+	height: 60px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: rotate(45deg);
+	border: 3px solid #161929;
+	cursor: pointer;
+	transition: border 0.3s;
+}
+
+.service-section .service-point .min-service-point:hover span{
+	border: 3px solid #EBBE32;
+	background: #EBBE32;
+}
+
+.service-section .service-point .min-service-point span i{
+	font-size: 25px;
+	color: #161929;
+	transform: rotate(-45deg);
+	transition:color 0.3s;
+}
+
+.service-section .service-point .min-service-point:hover span i{
+	color: #fff;
+}
+
+.service-section .service-point .min-service-point h3{
+	font-size: 25px;
+	color: #161929;
+	font-family: D-DIN;
+}
+
+.service-section .service-point .min-service-point p{
+	font-size: 16px;
+	color: #161929;
+	font-family: D-DIN;
+	text-align: center;
+	padding: 10px 15px;
+}
+
+.service-section .service-point .min-service-point a{
+	font-size: 16px;
+	color: #fff;
+	padding: 10px 18px;
+	background: #161929;
+	text-decoration: none;
+	font-family: D-DIN;
+	text-transform: uppercase;
+	transition: 0.3s;
+}
+
+.service-section .service-point .min-service-point:hover a{
+	background: #EBBE32;
+}
+
+
+
+/*Stard @media for Responsive all of Device*/
+
+@media (max-width: 1050px) {
+
+	.service-section .service-point .min-service-point{
+		width: 260px;
+		height: 180px;
+}
+
+    .service-section .service-point .min-service-point span{
+		left: 100px;
+}
+
+    .service-section .service-point .min-service-point h3{
+		font-size: 20px;
+}
+
+.service-section .service-point .min-service-point p{
+		font-size: 15px;
+		padding: 0px 10px 5px 10px;
+}
+
+.service-section .service-point .min-service-point a{
+		font-size: 14px;
+		padding: 8px 14px;
+}
+}
+
+
+@media (max-width: 900px) {
+
+	.service-section .service-point .min-service-point{
+		width: 200px;
+		height: 150px;
+		padding-bottom: 5px;
+}
+
+    .service-section .service-point .min-service-point span{
+		top: -25px;
+		left: 75px;
+		width: 50px;
+		height: 50px;
+}
+
+    .service-section .service-point .min-service-point h3{
+		font-size: 18px;
+}
+
+.service-section .service-point .min-service-point p{
+		font-size: 12px;
+		padding: 0px 5px 5px 5px;
+}
+
+.service-section .service-point .min-service-point a{
+		font-size: 14px;
+		padding: 7px 13px;
+}
+}
+
+@media (max-width: 730px) {
+
+	.service-section .service-point{
+		flex-direction: column;
+
+}
+
+	.service-section .service-point .min-service-point{
+		position: relative;
+		width: 300px;
+		height: 200px;
+		background: #fff;
+		padding-top: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		border-top: 3px solid #161929;
+		box-shadow: 0px 0px 15px rgb(180, 180, 180, 0.5);
+		transition: border 0.3s;
+		margin-bottom: 50px;
+}
+
+    .service-section .service-point .min-service-point span{
+		position: absolute;
+		top: -30px;
+		left: 120px;
+		width: 60px;
+		height: 60px;
+		background: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transform: rotate(45deg);
+		border: 3px solid #161929;
+		cursor: pointer;
+		transition: border 0.3s;
+}
+
+	.service-section .service-point .min-service-point h3{
+		font-size: 25px;
+}
+
+.service-section .service-point .min-service-point p{
+		font-size: 16px;
+		padding: 10px 15px;
+}
+
+.service-section .service-point .min-service-point a{
+		font-size: 16px;
+		padding: 10px 18px;
+}
+}
+
+@media (max-width: 350px) {
+
+	.service-section {
+	    padding: 0px;
+}
+
+	.service-section .service-point{
+		padding: 0 10px !important;
+
+}
+
+	.service-section .service-point .min-service-point{
+		width: 100%;
+}	
+
+    .service-section .service-point .min-service-point span{
+		left: 40%;
+}
+}
+
+
+
+@media (max-width: 260px) {
+
+	.service-section .service-point .min-service-point p{
+		font-size: 12px;
+}
+}

@@ -1,0 +1,16 @@
+i.fas.fa-arrow-up.upper {
+    position: fixed;
+    bottom: 7%;
+    right: 3%;
+    z-index: 1000;
+    display: inline-block;
+    background: #e74c3c;
+    padding: 8.5px 10px;
+    font-size: 22px;
+    color: #fff;
+    border-radius: 2px;
+    display: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.1),
+                -2px -2px 50px rgba(0, 0, 0, 0.1);
+}
